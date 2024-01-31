@@ -6,11 +6,41 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens:{
+
+      sm:'480px',
+      md:'768px',
+      lg:'976px',
+      xl:'1440px'
+
+    },
     extend: {
+      colors:{
+
+        textGray:"#717171",
+        MBCGreen:"#28CB8B",
+        textGray1:"#4D4D4D",
+
+      },
+      fontSize:{
+        productFont:"39px"
+      },
+      fontWeight:{
+        BestProduct:"700"
+      },
+      width:{
+        CardWidth:"180px",
+        CardWidthXL:"280px",
+      },
+      height:{
+        CardHeight:"354px",
+        CardHeightXL:"494px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+
       },
     },
   },
