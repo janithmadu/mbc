@@ -7,7 +7,7 @@ import Battey from "../../../../public/battye.jpg";
 function HeroPage() {
   return (
     <div className="container  flex flex-col-reverse md:flex-row items-center px-6 mx-auto md:mt-10 space-y-0 md:space-y-0  ">
-      <div className="flex flex-col mb-32 space-y-12 md:w-1/2">
+      <div className="flex flex-col mb-32 h-24 space-y-12 md:w-1/2">
         <h1 className="text-center max-w-md text-4xl font-bold md:text-5xl uppercase md:text-left  xl:text-7xl">
           Best Place for Your All Needs of Batteries
         </h1>
