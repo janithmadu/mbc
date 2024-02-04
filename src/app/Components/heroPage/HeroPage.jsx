@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import batman from "../../../../public/20945560.jpg";
 import arrow from "../../../../public/arrow.svg";
-import Battey from "../../../../public/battye.jpg";
+
 function HeroPage() {
   return (
     <div className="container  flex flex-col-reverse md:flex-row items-center px-6 mx-auto md:mt-10 space-y-0 md:space-y-0  ">

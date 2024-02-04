@@ -4,12 +4,14 @@ import Image from "next/image";
 
 function AboutSection() {
   return (
-    <div className="container mr-auto ml-auto mt-50 lg:mt-0 md:mt-0 h-auto xl:mb-10  p-10 mt:bg-balck xl:bg-red-500 lg:bg-green-600">
+    <div className="container mr-auto ml-auto mt-52  lg:mt-0 md:mt-0 h-100 xl:mt-3  p-10 ">
       <div className="pb-5 ">
-        <h1 className=" text-4xl font-bold ">Why You Should Choose Us</h1>
+        <h1 className=" text-4xl font-bold text-center md:text-center ">
+          Why You Should Choose Us
+        </h1>
       </div>
-      <div className="flex leading-8 flex-col-reverse md:flex-row">
-        <div>
+      <div className="flex leading-8 flex-col-reverse  md:flex-col-reverse lg:flex-row ">
+        <div className="md:mt-32 md:text-center text-center lg:text-left">
           Choose <span className=" font-semibold">MBC </span>
           for a seamless battery shopping experience. <br />
           Our commitment to reliability ensures that our <br />
@@ -25,7 +27,7 @@ function AboutSection() {
           </span>
         </div>
 
-        <div className="md:w-1/2 w-72 xl:w-100">
+        <div className="md:w-1/1 xl:w-100">
           <Image src={about} />
         </div>
       </div>
