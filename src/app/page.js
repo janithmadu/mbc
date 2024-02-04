@@ -5,9 +5,9 @@ import AboutSection from "./Components/AboutSection/AboutSection";
 export default function Home() {
   return (
     <div>
-       <HeroPage/>
-       <Middle/>
-       <AboutSection/>
+      <HeroPage />
+      <Middle />
+      <AboutSection />
     </div>
   );
 }
