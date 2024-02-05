@@ -3,19 +3,20 @@ import React from "react";
 import Add from "../../../../public/add-circle.png";
 import BattryImage from "../../../../public/Rectangle.png";
 import Link from "next/link";
-function ProductCard() {
+import { urlFor } from "../../../../sanity/lib/client";
+function ProductCard({ carddata }) {
   return (
     <div className="w-CardWidth h-auto shadow-xl shadow-gray-400 rounded-lg p-3 pb-6 xl:pb-14 xl:w-CardWidthXL xl:h-auto">
       <div className="flex justify-end">
-        <Image src={Add} className=" w-7 md:w-7 xl:w-12" />
+        <Image src={Add} className=" w-7 md:w-7 xl:w-12" alt="add" />
       </div>
-      <Image src={BattryImage} />
+      <Image src={urlFor(carddata.Image).url() } width={250} height={250}   alt="battry"/>
       <h1 className="text-1xl text-left md:text-1xl xl:text-2xl mt-10 ">
-        Amaron Automotive 12V DC{" "}
+        {carddata.productname}
       </h1>
       <div className="flex items-center gap-4 md:gap-4 xl:gap-14 ">
         <h3 className="md:text-sm text-sm leading-10 md:leading-10 xl:leading-10 xl:text-xl text-green-400 font-black">
-          Rs. 5,000
+          Rs.{carddata.ProductPrice}
         </h3>
         <Link
           href="#"

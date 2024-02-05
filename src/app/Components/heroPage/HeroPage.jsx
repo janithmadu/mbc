@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import batman from "../../../../public/20945560.jpg";
 import arrow from "../../../../public/arrow.svg";
-import { getProductDetails } from "@/utils/getProductDetails";
 
 
 
